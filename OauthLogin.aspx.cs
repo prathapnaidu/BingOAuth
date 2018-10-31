@@ -63,7 +63,7 @@ namespace bingauth
 
         public Authentication getaccesstoken(string code)
         {
-            string ClientSecret = "mclqlY8[cwMMACPC3684=:;";
+            string ClientSecret = "****************";
 
             var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri("http://localhost:52713/Default"), null);
             //var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId);
@@ -90,7 +90,7 @@ namespace bingauth
         {
             //var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId);
 
-            string ClientSecret = "mclqlY8[cwMMACPC3684=:;";
+            string ClientSecret = "*****************";
 
             var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri("http://localhost:52713/Default"), null);
 
@@ -114,7 +114,7 @@ namespace bingauth
 
             try
             {
-                refreshToken = protectedToken;// "MCUAOe!DyiX4Pl1FQT7x1mxhxghYqbZsfhJneF7hubJW3Rx7MV1VcaJEMUe9Lw4KGujKHq7o3TeKlnfumiLbUJYoGCAHf3wJ5JFM!iWWC3gqsn6nXMH9mqSva2PHOzEzMdhld9vgBqtArR8IdLKhwv1w!ZUPKprbl!mGOAGpZ2ZkrC7B5dv7D3haTnHgQrUbZvgov2nRCeemw3LncvW6WsWYhqdZTnFxzOLDhCmTFSq1RTSDIgtKFqgdDSApxmzwdFd*vIKfpKyyzlcl*SxrF0382xqG68J06MBU6Lg49zeXv1M74AVr1xK2ooUoGYk4ALs7F1vbitOpyqYdL*dwlzkQ$";// protectedToken.Unprotect();
+                refreshToken = protectedToken;
                 return true;
             }
             catch (CryptographicException)
